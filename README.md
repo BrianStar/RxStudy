@@ -2,10 +2,10 @@
     
     $ root/
       `--rx
-         |--annotations
+         |--annotations                             -->注解
          |  |--Beta.java
          |  `--Experimental.java
-         |--exceptions
+         |--exceptions                              -->异常
          |  |--CompositeException
          |  |--Exception
          |  |--MissingBackpressureException
