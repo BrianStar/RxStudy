@@ -6,6 +6,14 @@
          |  |--Beta.java
          |  `--Experimental.java
          |--exceptions
+         |  |--CompositeException
+         |  |--Exception
+         |  |--MissingBackpressureException
+         |  |--OnCompletedFailedException
+         |  |--OnErrorFailedException
+         |  |--OnErrorNotImplementedException
+         |  |--OnErrorThrowable
+         |  `--UnsubscribeFailedException
          |--functions
          |--internal
          |--observables
