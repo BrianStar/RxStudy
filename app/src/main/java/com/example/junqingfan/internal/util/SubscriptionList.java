@@ -1,6 +1,7 @@
 package com.example.junqingfan.internal.util;
 
 import com.example.junqingfan.Subscription;
+import com.example.junqingfan.exceptions.Exceptions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -91,6 +92,7 @@ public final class SubscriptionList implements Subscription {
         }
 
         //TODO 抛出异常
+        Exceptions.throwIfAny(es);
     }
 
     public void clear() {
