@@ -16,6 +16,8 @@
          |  `--UnsubscribeFailedException
          |--functions
          |--internal
+         |  |--atomic                               ---->开源框架JCTools，处理并发操作 
+         |  |--unsafe                               -/
          |--observables
          |--obserbers
          |--plugins
