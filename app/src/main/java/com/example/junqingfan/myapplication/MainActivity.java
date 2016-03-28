@@ -1,5 +1,6 @@
 package com.example.junqingfan.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onRunSchedulerExampleButtonClicked();
+                //onRunSchedulerExampleButtonClicked();
+                startActivity(new Intent(MainActivity.this,SecondActivity.class));
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
@@ -90,9 +92,9 @@ public class MainActivity extends AppCompatActivity {
     void onRunSchedulerExampleButtonClicked() {
         sampleObservable()
                 // Run on a background thread
-                .subscribeOn(HandlerScheduler.from(backgroundHandler))
+                //.subscribeOn(HandlerScheduler.from(backgroundHandler))
                 // Be notified on the main thread
-                .observeOn(AndroidSchedulers.mainThread())
+                //.observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Subscriber<String>() {
                     @Override
                     public void onCompleted() {
