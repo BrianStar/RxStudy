@@ -83,6 +83,16 @@ public class Observable<T> {
     }
 
 
+    /**
+     * 将N条数据转化成一个可发射N条数据的可观察者
+     * @param t1
+     * @param t2
+     * @param t3
+     * @param t4
+     * @param t5
+     * @param <T>
+     * @return
+     */
     @SuppressWarnings("unchecked")
     public final static <T> Observable<T> just(T t1, T t2, T t3, T t4, T t5) {
         return from(Arrays.asList(t1, t2, t3, t4, t5));
