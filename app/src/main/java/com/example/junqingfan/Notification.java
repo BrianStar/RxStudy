@@ -12,6 +12,7 @@ public class Notification<T> {
 
     private Notification(Kind kind, T value, Throwable e) {
         this.value = value;
+
         this.throwable = e;
         this.kind = kind;
     }
